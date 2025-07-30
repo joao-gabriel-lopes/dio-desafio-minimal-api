@@ -67,7 +67,7 @@ public sealed class AdministradorServicoTest
         var adm2 = administradorServico.BuscaPorId(adm.Id);
 
         // Assert
-        Assert.AreEqual(1, adm2.Id);
+        Assert.AreEqual(1, adm2?.Id);
 
     }
 }
